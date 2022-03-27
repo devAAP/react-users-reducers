@@ -1,7 +1,7 @@
 import React, { useState} from 'react';  
 import {Form, Button} from 'react-bootstrap';
-import {v4 as uuid} from "uuid";
 import {connect} from "react-redux";
+import {v4 as uuid} from "uuid"
 import {addUserAction} from "../actions/actions";
 
 // the short way

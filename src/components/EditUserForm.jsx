@@ -28,13 +28,14 @@ class EditUserForm extends Component {
           email: '', 
           gen: '' 
       });
+      
       this.props.closeModal();
   }
-  addNewUser = (user) => {
-      this.setState({
-          users: [...this.state.users, user]
-      })
-  }
+  // addNewUser = (user) => {
+  //     this.setState({
+  //         users: [...this.state.users, user]
+  //     })
+  // }
   // editUser = (id, updateduser) => {
   //   this.setState({
   //   users: this.state.users.map(user =>user.id===id ? updateduser : user)
@@ -49,7 +50,7 @@ class EditUserForm extends Component {
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Email address</Form.Label>
-        <Form.Control type="email" placeholder="Enter email" name="email" value={this.state.email} onChange={this.handleChange} />
+        <Form.Control type="email" placeholder="Enter email" value={this.state.email} onChange={this.handleChange} />
       </Form.Group>
         
       <Form.Group className="mb-3" controlId="formBasicPassword">
